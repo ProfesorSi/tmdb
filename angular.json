@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tmdb-app"
+    }
+  },
+  "defaultProject": "tmdb-app",
+  "cli": {
+    "analytics": false
+  }
 }
