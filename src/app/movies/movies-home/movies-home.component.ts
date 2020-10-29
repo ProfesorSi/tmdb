@@ -19,7 +19,7 @@ export class MoviesHomeComponent implements OnInit {
     .then((data) => {
       this.movies = data;
       this.listOfMovies = this.movies.results;
-      console.log(this.listOfMovies);
+     console.log(this.listOfMovies);
     }); 
   }
 }
