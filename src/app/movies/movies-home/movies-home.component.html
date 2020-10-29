@@ -7,13 +7,12 @@
 <br>
 <br>
 
-<div class="wrapper">
-    <div class="card" *ngFor="let movie of listOfMovies">
+<div class="wrapper" >
+    <div class="card" *ngFor="let movie of listOfMovies" >
         <img src="{{imageUrl}}{{movie.poster_path}}" alt="Avatar" style="width:100%">
         <div class="container">
           <h4><b>{{ movie.title }}</b></h4> 
         </div>
-      </div>
-      
+      </div> 
 </div>
  
