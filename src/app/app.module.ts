@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MoviesModule } from './movies/movies.module';
 import { TvShowsModule } from './tv-shows/tv-shows.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TvShowsModule } from './tv-shows/tv-shows.module';
     BrowserModule,
     AppRoutingModule,
     MoviesModule,
-    TvShowsModule
+    TvShowsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,6 +11,6 @@ import { MoviesHomeComponent } from './movies-home/movies-home.component';
     CommonModule,
     MoviesRoutingModule
   ],
-  exports: [MoviesHomeComponent]
+  exports: []
 })
 export class MoviesModule { }
