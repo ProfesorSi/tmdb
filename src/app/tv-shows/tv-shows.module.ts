@@ -11,6 +11,6 @@ import { TvShowsHomeComponent } from './tv-shows-home/tv-shows-home.component';
     CommonModule,
     TvShowsRoutingModule
   ],
-  exports: [TvShowsHomeComponent]
+  exports: []
 })
 export class TvShowsModule { }

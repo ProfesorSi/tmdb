@@ -1,0 +1,122 @@
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #2fd3d5;
+  color: white;
+  font-weight: 600;
+}
+
+.toolbar img {
+  margin: 0 16px;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.content {
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+}
+
+.search {
+  width: 100%;
+  
+}
+
+form {
+  display: block;
+}
+
+nav {
+  align-self: start;
+}
+
+.search #inner_search_form {
+  margin-top: 30px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.search #inner_search_form #inner_search_v4 {
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  font-size: 1.1em;
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  outline: none;
+}
+
+input {
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  background-color: #2fd3d5;
+  border: 3px solid black;
+  cursor: text;
+  box-sizing: border-box;
+  border: 2px solid rgb(0, 0, 0) !important;
+}
+
+input[type="submit"] {
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 46px;
+  padding: 10px 26px;
+  border: none;
+  background: rgb(132, 150, 111);
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  right: -1px;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  
+}
+
+/* CSS FOR BUTTONS */
+a.button3 {
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #2fd3d5;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+a.button3:hover{
+    background-color: #2fd3d5;
+ }
