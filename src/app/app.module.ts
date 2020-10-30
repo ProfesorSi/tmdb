@@ -17,7 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     MoviesModule,
     TvShowsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
