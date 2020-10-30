@@ -10,7 +10,8 @@ export class MoviesHomeComponent implements OnInit {
   movies;
   listOfMovies = [];
   imageUrl = 'https://image.tmdb.org/t/p/w500';
-
+  
+  
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
