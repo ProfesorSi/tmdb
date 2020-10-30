@@ -13,13 +13,6 @@ html, body{
   font-weight: 400;
 }
 
-.link{
-  display: block;
-  text-align: center;
-  color: #777;
-  text-decoration: none;
-  padding: 10px;
-}
 
 .movie_card{
   position: relative;
@@ -50,24 +43,8 @@ html, body{
       h1{
         color: black;
         font-weight: 400;
-      }
-      h4{
-        color: #555;
-        font-weight: 400;
-      }
-      .minutes{
-        display: inline-block;
-        margin-top: 15px;
-        color: #555;
-        padding: 5px;
-        border-radius: 5px;
-        border: 1px solid rgba(0,0,0,0.05);
-      }
-      .type{
-        display: inline-block;
-        color: #959595;
-        margin-left: 10px;
-      }
+      }   
+    
       .locandina{
         position: relative;
         float: left;
@@ -81,30 +58,6 @@ html, body{
       height: 50%;
       .text{
         color: #545454;
-      }
-    }
-    .movie_social{
-      height: 10%;
-      padding-left: 15px;
-      padding-bottom: 20px;
-      ul{
-        list-style: none;
-        padding: 0;
-        li{
-          display: inline-block;
-          color: rgba(0,0,0,0.3);
-          transition: color 0.3s;
-          transition-delay: 0.15s;
-          margin: 0 10px;
-          &:hover{
-            transition: color 0.3s;
-            color: rgba(0,0,0,0.7);
-          }
-          i{
-            font-size: 19px;
-            cursor: pointer;
-          }
-        }
       }
     }
   }
@@ -166,6 +119,3 @@ html, body{
 }
 
 
-.bright_back{
-  background: url("https://occ-0-2433-448.1.nflxso.net/art/cd5c9/3e192edf2027c536e25bb5d3b6ac93ced77cd5c9.jpg");
-}
