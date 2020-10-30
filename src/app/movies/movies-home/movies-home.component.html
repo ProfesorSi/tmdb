@@ -8,17 +8,18 @@
 <br>
 
 
-<a [routerLink]="['/movieDetail', listOfMovies.values()]">
 
   <div class="wrapper">
     <div class="card" *ngFor="let movie of listOfMovies">
+      <a [routerLink]="['/movieDetail',movie.title]">
+
       <img src="{{imageUrl}}{{movie.poster_path}}" alt="Avatar" style="width:100%">
       <div class="container">
         <h4><b>{{ movie.title }}</b></h4>
       </div>
+    </a>
     </div>
 
   </div>
 
 
-</a>
