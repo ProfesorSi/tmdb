@@ -6,9 +6,10 @@
 <br>
 <br>
 <br>
+<a routerLink="/movieDetail" routerLinkActive="active" class="button3">movieDetail</a>
 
 <div class="wrapper" >
-    <div class="card" *ngFor="let movie of listOfMovies" >
+    <div class="card" *ngFor="let movie of listOfMovies" routerLink="movieDetail">
         <img src="{{imageUrl}}{{movie.poster_path}}" alt="Avatar" style="width:100%">
         <div class="container">
           <h4><b>{{ movie.title }}</b></h4> 
