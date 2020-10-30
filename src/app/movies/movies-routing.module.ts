@@ -9,7 +9,7 @@ const routes: Routes = [
     component: MoviesHomeComponent
   },
   {
-    path: 'movieDetail/:title',
+    path: 'movieDetail/:title/:overview/:poster_path',
     component: MovieDetailComponent
   }
 ];
