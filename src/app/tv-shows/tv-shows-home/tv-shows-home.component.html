@@ -4,7 +4,7 @@
 
 <div class="wrapper">
   <div class="card" *ngFor="let tvShow of listOfTvShows">
-    <a routerLink="/tvShowDetail">
+    <a [routerLink]="['/tvShowDetail',tvShow.name,tvShow.overview,tvShow.poster_path]">
       <img src="{{imageUrl}}{{tvShow.poster_path}}" alt="Avatar" style="width:100%">
       <div class="container">
         <h4><b>{{ tvShow.original_name }}</b></h4>

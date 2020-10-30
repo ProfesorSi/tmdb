@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
@@ -20,7 +19,7 @@ export class MovieDetailComponent implements OnInit {
     this.route.paramMap.subscribe((params) => {
       this.title = params.get('title');
       this.overview = params.get('overview');
-      this.posterPath = params.get('poster_path')
+      this.posterPath = params.get('poster_path');
     });
   }
 }
