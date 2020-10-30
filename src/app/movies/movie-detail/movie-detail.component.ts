@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-movie-detail',
@@ -7,20 +8,16 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./movie-detail.component.css']
 })
 export class MovieDetailComponent implements OnInit {
-  @Input() movies;
-  movieID;
+  @Input() title: string;
   
 
-  constructor(private http: HttpClient) { }
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.http.get('https://api.themoviedb.org/3/movie/724089?api_key=043c17422b8795820d9fcd82b4ed3212&language=en-US')
-    .subscribe(
-      (response) => {
-        this.movies = response;
-        console.log(this.movies);
-      }
-    )
+    this.route.paramMap.subscribe( params =>
+      this.title = params.get('title')
+  );
+  console.log(this.title);
   }
 
 }
