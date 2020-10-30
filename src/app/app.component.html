@@ -18,7 +18,7 @@
 
     </nav>
 
-    <div class="search">
+    <div class="search" *ngIf="router.url === '/movies' || router.url === '/tvShows'">
         <form id="inner_search_form" action="/search" method="get" accept-charset="utf-8">
             <label>
                 <input dir="auto" id="inner_search_v4" name="query" type="text" tabindex="1" autocorrect="off"
