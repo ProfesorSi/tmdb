@@ -21,6 +21,7 @@
 
 .content {
   display: flex;
+  flex-wrap: nowrap;
   margin: 82px auto 32px;
   padding: 0 16px;
   max-width: 960px;
@@ -74,11 +75,10 @@ input {
   text-shadow: none;
   display: inline-block;
   text-align: start;
-  background-color: #2fd3d5;
-  border: 3px solid black;
+  background-color: white;
   cursor: text;
   box-sizing: border-box;
-  border: 2px solid rgb(0, 0, 0) !important;
+  margin-bottom: 20px;
 }
 
 input[type="submit"] {
@@ -89,7 +89,7 @@ input[type="submit"] {
   height: 46px;
   padding: 10px 26px;
   border: none;
-  background: rgb(132, 150, 111);
+  background: rgb(215, 221, 208);
   border-radius: 30px;
   position: absolute;
   top: 0;
