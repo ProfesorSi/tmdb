@@ -1,15 +1,10 @@
-<br>
-<br>
-<br>
-
 <div class="wrapper">
-  <div class="card" *ngFor="let tvShow of listOfTvShows">
+  <div class="movie_card" *ngFor="let tvShow of listOfTvShows">
     <a [routerLink]="['/tvShowDetail',tvShow.name,tvShow.overview,tvShow.poster_path]">
-      <img src="{{imageUrl}}{{tvShow.poster_path}}" alt="Avatar" style="width:100%">
-      <div class="container">
-        <h4><b>{{ tvShow.original_name }}</b></h4>
-        <h4><b>{{ tvShow.name }}</b></h4>
-      </div>
+      <img src="{{imageUrl}}{{tvShow.poster_path}}" alt="Image">
     </a>
+      <h4><b>{{ tvShow.name }}</b></h4>
   </div>
 </div>
+
+
